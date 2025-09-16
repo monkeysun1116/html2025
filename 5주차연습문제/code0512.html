@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container{
+        width: 520px;
+        border: 1px solid black;
+        padding: 20px 40px;
+        margin: 0 auto;
+    }
+    legend{font-weight: bold;}
+    ul{
+        list-style: none;
+    }
+    li{
+        line-height: 30px;
+    }
+    fieldset{
+        margin-bottom: 10px;
+    }
+</style>
+<body>
+    <div id="container">
+    <h1>프런트엔드 개발자 지원서</h1>
+<p>HTML, CSS, 자바스크립트의 기술을 이해하고 실무 경험이 있는 분을 찾습니다.</p><hr>
+<form name="register">
+    <legend><b>개인정보</b></legend>
+    <ul>
+        <li>
+            <label for="name">이름
+                <input type="name" name="name" id="name" placeholder="공백없이 입력하시오">
+            </label>
+        </li>
+        <li>
+             <label for="phone">연락처
+                <input type="tel" name="phone" id="phone">
+            </label>
+        </li>
+    </ul>
+     <legend><b>선택사항</b></legend>
+        <ul>
+            <li>
+                <input type="radio" name="web1" id="web1"><label for="web1">웹 퍼블리싱</label><br>
+                <input type="radio" name="web2" id="web2"><label for="web2">웹 어플리케이션 개발</label><br>
+                 <input type="radio" name="web3" id="web3"><label for="web3">개발 환경 개선</label>
+            </li>
+        </ul>
+        <legend><b>지원 동기</b></legend>
+         <label for="memo"></label><br>
+       <textarea name="memo" id="" cols="60" rows="5" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea>
+       <div>
+       <input type="button" value="접수 하기">
+       <input type="reset" value="다시 쓰기">
+       </div>
+</form>
+</div>
+</body>
+</html>
